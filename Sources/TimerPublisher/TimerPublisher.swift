@@ -13,6 +13,8 @@ public protocol CountdownPublisherArgsProtocol {
 public struct TimerPublisher {
     public static let defaultInterval = 0.5
     
+    public init() {}
+    
     public struct CountdownArgs: CountdownPublisherArgsProtocol {
         public let countdownFrom: Double
         public let referenceTime: TimeInterval
